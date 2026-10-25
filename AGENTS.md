@@ -14,6 +14,10 @@ For "check this video", or adding/changing off-limits topics, read the
 `off-limits-check` skill at `.agents/skills/off-limits-check/SKILL.md`. direk-ai
 also runs it after every transcription.
 
+For turning ready-made style choices on or off (speaker colors, corner badge, …),
+changing their values, or listing them, read the `style-choices` skill at
+`.agents/skills/style-choices/SKILL.md`.
+
 Read these files directly; do not rely on your agent having auto-loaded them as
 skills. (`CLAUDE.md` only imports this file for Claude Code.)
 

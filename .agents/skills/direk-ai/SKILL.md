@@ -110,6 +110,11 @@ Ask for their name, brand or channel name, and words they often say that Whisper
 might misspell (product names, tech terms, local slang). Write them to
 `profile/vocabulary.md`, keeping the explanatory header from the example.
 
+**Round 5: extras** (a note, no questions)
+Tell them in one line that ready-made extras (speaker colors, quiet-voice text,
+corner badge, translations) can be added any time: say "what style options are
+there" or "add multi-speaker captions". These come from the style-choices skill.
+
 **Preview and save.** If there is a video in `input/`, render a 5-second sample of
 the caption style (and the intro, if generated) on their own footage. Show it and
 adjust before saving. Write `profile/style.md` as short bullets in the user's own
@@ -275,6 +280,9 @@ are fitted (step 2). Only if most of the main footage doesn't match, ask the usu
   note comes twice), add it to `profile/rules.md`: one line with the rule, the user's
   exact words, and the date. Confirm with: "Saved as a rule: …".
 - Changes to intro, outro or vocabulary go into those profile files, not rules.
+- A style change that matches a catalog choice in
+  `.agents/skills/style-choices/choices/` (speaker colors, corner badge, …) follows
+  the style-choices skill. Other style changes are edited here.
 - After any of these profile writes, run `node tools/profile.mjs save`.
 - Never write preferences into `engine/`; setup can replace it.
 - On approval ("approved", "final"), render at final quality to
